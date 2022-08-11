@@ -1,9 +1,8 @@
 import './Cell.css';
 
-function Cell() {
+function Cell(props) {
 	return (
-		<div className="Cell">
-			
+		<div className = {props.isAlive === 'true' ? "Cell Cell--active" : "Cell"}>			
 		</div>
 	);
 }
